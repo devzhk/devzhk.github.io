@@ -37,7 +37,11 @@ layout: default
         {% endif %}
       </div>
     {% endif %}
-
+    <style>
+      .more-info {
+        font-size: 0.9em; /* Adjust as needed */
+      }
+    </style>
     <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
@@ -68,8 +72,6 @@ layout: default
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
 

@@ -28,8 +28,8 @@ a.btncv {
 }
 
 a.btncv:hover {
-  color: var(--global-theme-color) !important;
-  border-color: var(--global-theme-color) !important;
+  color: var(--global-text-color) !important;
+  border-color: var(--global-text-color) !important;
   text-decoration: none !important;
 }
 
@@ -43,18 +43,18 @@ p.location {
 }
 
 i.iconlocation {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   font-size: 0.8rem;
 }
 
 i.iconinstitution {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   font-size: 0.95rem;
   margin-right: 0.3rem;
 }
 
 i.icondepartment {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   font-size: 0.8rem;
   margin-right: 0.3rem;
 }
@@ -110,7 +110,7 @@ div.list-group {
 }
 
 td.list-group-category {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   margin-bottom: 0.5rem;
 }
 
