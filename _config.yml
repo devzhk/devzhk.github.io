@@ -248,6 +248,7 @@ exclude:
   - vendor
   - _pages/dropdown.md
   - _pages/projects.md
+  - _pages/teaching.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -636,5 +637,7 @@ jekyll_get_json:
     json: assets/json/resume.json # it can also be an url
 jsonresume:
   - education
+  - experience
   - services
   - awards
+  - teaching

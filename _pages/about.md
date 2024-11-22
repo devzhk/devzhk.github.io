@@ -15,8 +15,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-**Biography**: I am currently a PhD candidate at Caltech in Computing + Mathematical Sciences advised by [Yisong Yue](http://www.yisongyue.com/). 
-My research interests primarily lie in. 
-Before Caltech, I received my Bachelor's degree in Computer Science from Shanghai Jiao Tong University in 2020.
+**Biography**: I am currently a PhD candidate at Caltech in Computing + Mathematical Sciences advised by [Yisong Yue](http://www.yisongyue.com/). Before Caltech, I received my Bachelor's degree in Computer Science from Shanghai Jiao Tong University in 2020.
+
+My research interests primarily lie in advancing generative modeling techniques and exploring their applications to inverse problems. Currently, I particularly focus on diffusion models and their role in solving inverse problems.
 
 I am supported by PIMCO Data Science Gradudate Fellowhip. 
