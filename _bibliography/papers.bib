@@ -2,126 +2,92 @@
 ---
 
 @misc{zheng2024ensemblekalmandiffusionguidance,
+      abbr={Preprint},
       arxiv={2409.20175},
       bibtex_show={true},
       title={Ensemble Kalman Diffusion Guidance: A Derivative-free Method for Inverse Problems}, 
       author={Hongkai Zheng and Wenda Chu and Austin Wang and Nikola Kovachki and Ricardo Baptista and Yisong Yue},
+      abstract={When solving inverse problems, one increasingly popular approach is to use pre-trained diffusion models as plug-and-play priors. This framework can accommodate different forward models without re-training while preserving the generative capability of diffusion models.  Despite their success in many imaging inverse problems, most existing methods rely on privileged information such as derivative, pseudo-inverse, or full knowledge about the forward model. This reliance poses a substantial limitation that restricts their use in a wide range of problems where such information is unavailable, such as in many scientific applications. We propose Ensemble Kalman Diffusion Guidance (EnKG), a derivative-free approach that can solve inverse problems by only accessing forward model evaluations and a pre-trained diffusion model prior. We study the empirical effectiveness of EnKG across various inverse problems, including scientific settings such as inferring fluid flows and astronomical objects, which are highly non-linear inverse problems that often only permit black-box access to the forward model.},
       year={2024},
+      selected={true},
       eprint={2409.20175},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2409.20175}, 
 }
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{zheng2024fast,
+abbr={TMLR},
+bibtex_show={true},
+title={Fast Training of Diffusion Models with Masked Transformers},
+abstract={We propose an efficient approach to train large diffusion models with masked transformers. While masked transformers have been extensively explored for representation learning, their application to generative learning is less explored in the vision domain. Our work is the first to exploit masked training to reduce the training cost of diffusion models significantly. Specifically, we randomly mask out a high proportion (\emph{e.g.}, 50\%) of patches in diffused input images during training. For masked training, we introduce an asymmetric encoder-decoder architecture consisting of a transformer encoder that operates only on unmasked patches and a lightweight transformer decoder on full patches. To promote a long-range understanding of full patches, we add an auxiliary task of reconstructing masked patches to the denoising score matching objective that learns the score of unmasked patches. Experiments on ImageNet-256256 show that our approach achieves the same performance as the state-of-the-art Diffusion Transformer (DiT) model, using only 31\% of its original training time. Thus, our method allows for efficient training of diffusion models without sacrificing the generative performance.},
+author={Hongkai Zheng and Weili Nie and Arash Vahdat and Anima Anandkumar},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2024},
+url={https://openreview.net/forum?id=vTBjBtGioE},
+selected={true},
+code={https://github.com/Anima-Lab/MaskDiT}
 }
 
-@book{einstein1956investigations,
+@inproceedings{zheng2023fast,
+  abbr={ICML},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+  eprint={2211.13449},
+  title={Fast sampling of diffusion models via operator learning},
+  author={Zheng, Hongkai and Nie, Weili and Vahdat, Arash and Azizzadenesheli, Kamyar and Anandkumar, Anima},
+  abstract={Diffusion models have found widespread adoption in various areas. However, their sampling process is slow because it requires hundreds to thousands of network evaluations to emulate a continuous process defined by differential equations. In this work, we use neural operators, an efficient method to solve the probability flow differential equations, to accelerate the sampling process of diffusion models. Compared to other fast sampling methods that have a sequential nature, we are the first to propose a parallel decoding method that generates images with only one model forward pass. We propose diffusion model sampling with neural operator (DSNO) that maps the initial condition, i.e., Gaussian distribution, to the continuous-time solution trajectory of the reverse diffusion process. To model the temporal correlations along the trajectory, we introduce temporal convolution layers that are parameterized in the Fourier space into the given diffusion model backbone. We show our method achieves state-of-the-art FID of 3.78 for CIFAR-10 and 7.83 for ImageNet-64 in the one-model-evaluation setting.},
+  booktitle={International conference on machine learning},
+  pages={42390--42402},
+  year={2023},
+  organization={PMLR},
   selected={true},
-  inspirehep_id = {3255}
+  url={https://proceedings.mlr.press/v202/zheng23d.html},
+  code={https://github.com/neuraloperator/DSNO-pytorch}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
+@article{li2024physics,
+  abbr={ACM/JMS},
   bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+  title={Physics-informed neural operator for learning partial differential equations},
+  author={Li, Zongyi and Zheng, Hongkai and Kovachki, Nikola and Jin, David and Chen, Haoxuan and Liu, Burigede and Azizzadenesheli, Kamyar and Anandkumar, Anima},
+  journal={ACM/JMS Journal of Data Science},
+  volume={1},
+  number={3},
+  pages={1--27},
+  year={2024},
+  publisher={ACM New York, NY},
+  url={https://dl.acm.org/doi/full/10.1145/3648506},
+  code={https://github.com/neuraloperator/physics_informed}
 }
 
-@book{przibram1967letters,
+@inproceedings{xu2022langevin,
+  abbr={ICML},
   bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+  title={Langevin Monte Carlo for Contextual Bandits},
+  abstract={We study the efficiency of Thompson sampling for contextual bandits. Existing Thompson sampling-based algorithms need to construct a Laplace approximation (i.e., a Gaussian distribution) of the posterior distribution, which is inefficient to sample in high dimensional applications for general covariance matrices. Moreover, the Gaussian approximation may not be a good surrogate for the posterior distribution for general reward generating functions. We propose an efficient posterior sampling algorithm, viz., Langevin Monte Carlo Thompson Sampling (LMC-TS), that uses Markov Chain Monte Carlo (MCMC) methods to directly sample from the posterior distribution in contextual bandits. Our method is computationally efficient since it only needs to perform noisy gradient descent updates without constructing the Laplace approximation of the posterior distribution. We prove that the proposed algorithm achieves the same sublinear regret bound as the best Thompson sampling algorithms for a special case of contextual bandits, viz., linear contextual bandits. We conduct experiments on both synthetic data and real-world datasets on different contextual bandit models, which demonstrates that directly sampling from the posterior is both computationally efficient and competitive in performance.},
+  author={Xu, Pan and Zheng, Hongkai and Mazumdar, Eric V and Azizzadenesheli, Kamyar and Anandkumar, Animashree},
+  booktitle={International Conference on Machine Learning},
+  pages={24830--24850},
+  year={2022},
+  organization={PMLR},
+  url={https://proceedings.mlr.press/v162/xu22p.html},
+  code={https://github.com/devzhk/LMCTS}
+}
+
+@inproceedings{schaefer2020implicit,
+  abbr={ICML},
+  bibtex_show={true},
+  title={Implicit competitive regularization in GANs},
+  abstract={The success of GANs is usually attributed to properties of the divergence obtained by an optimal discriminator. In this work we show that this approach has a fundamental flaw:\\{If} we do not impose regularity of the discriminator, it can exploit visually imperceptible errors of the generator to always achieve the maximal generator loss. In practice, gradient penalties are used to regularize the discriminator. However, this needs a metric on the space of images that captures visual similarity. Such a metric is not known, which explains the limited success of gradient penalties in stabilizing GANs.\\{Instead}, we argue that the implicit competitive regularization (ICR) arising from the simultaneous optimization of generator and discriminator enables GANs performance. We show that opponent-aware modelling of generator and discriminator, as present in competitive gradient descent (CGD), can significantly strengthen ICR and thus stabilize GAN training without explicit regularization. In our experiments, we use an existing implementation of WGAN-GP and show that by training it with CGD without any explicit regularization, we can improve the inception score (IS) on CIFAR10, without any hyperparameter tuning.},
+  author={Schaefer, Florian and Zheng, Hongkai and Anandkumar, Animashree},
+  booktitle={International Conference on Machine Learning},
+  pages={8533--8544},
+  year={2020},
+  organization={PMLR},
+  url={https://proceedings.mlr.press/v119/schaefer20a.html},
+  code={https://github.com/devzhk/Implicit-Competitive-Regularization}
 }
