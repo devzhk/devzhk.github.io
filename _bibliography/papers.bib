@@ -6,13 +6,14 @@
       arxiv={2409.20175},
       bibtex_show={true},
       title={Ensemble Kalman Diffusion Guidance: A Derivative-free Method for Inverse Problems}, 
-      author={Hongkai Zheng and Wenda Chu and Austin Wang and Nikola Kovachki and Ricardo Baptista and Yisong Yue},
+      author={Hongkai Zheng and Wenda Chu* and Austin Wang* and Nikola Kovachki and Ricardo Baptista and Yisong Yue},
       abstract={When solving inverse problems, one increasingly popular approach is to use pre-trained diffusion models as plug-and-play priors. This framework can accommodate different forward models without re-training while preserving the generative capability of diffusion models.  Despite their success in many imaging inverse problems, most existing methods rely on privileged information such as derivative, pseudo-inverse, or full knowledge about the forward model. This reliance poses a substantial limitation that restricts their use in a wide range of problems where such information is unavailable, such as in many scientific applications. We propose Ensemble Kalman Diffusion Guidance (EnKG), a derivative-free approach that can solve inverse problems by only accessing forward model evaluations and a pre-trained diffusion model prior. We study the empirical effectiveness of EnKG across various inverse problems, including scientific settings such as inferring fluid flows and astronomical objects, which are highly non-linear inverse problems that often only permit black-box access to the forward model.},
       year={2024},
       selected={true},
       eprint={2409.20175},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
+      annotation={* equal contribution},
       url={https://arxiv.org/abs/2409.20175}, 
 }
 
@@ -22,12 +23,13 @@ abbr={TMLR},
 bibtex_show={true},
 title={Fast Training of Diffusion Models with Masked Transformers},
 abstract={We propose an efficient approach to train large diffusion models with masked transformers. While masked transformers have been extensively explored for representation learning, their application to generative learning is less explored in the vision domain. Our work is the first to exploit masked training to reduce the training cost of diffusion models significantly. Specifically, we randomly mask out a high proportion (\emph{e.g.}, 50\%) of patches in diffused input images during training. For masked training, we introduce an asymmetric encoder-decoder architecture consisting of a transformer encoder that operates only on unmasked patches and a lightweight transformer decoder on full patches. To promote a long-range understanding of full patches, we add an auxiliary task of reconstructing masked patches to the denoising score matching objective that learns the score of unmasked patches. Experiments on ImageNet-256256 show that our approach achieves the same performance as the state-of-the-art Diffusion Transformer (DiT) model, using only 31\% of its original training time. Thus, our method allows for efficient training of diffusion models without sacrificing the generative performance.},
-author={Hongkai Zheng and Weili Nie and Arash Vahdat and Anima Anandkumar},
+author={Hongkai Zheng* and Weili Nie* and Arash Vahdat and Anima Anandkumar},
 journal={Transactions on Machine Learning Research},
 issn={2835-8856},
 year={2024},
 url={https://openreview.net/forum?id=vTBjBtGioE},
 selected={true},
+annotation={* equal contribution},
 code={https://github.com/Anima-Lab/MaskDiT}
 }
 
@@ -53,7 +55,7 @@ code={https://github.com/Anima-Lab/MaskDiT}
   abbr={ACM/JMS},
   bibtex_show={true},
   title={Physics-informed neural operator for learning partial differential equations},
-  author={Li, Zongyi and Zheng, Hongkai and Kovachki, Nikola and Jin, David and Chen, Haoxuan and Liu, Burigede and Azizzadenesheli, Kamyar and Anandkumar, Anima},
+  author={Li*, Zongyi and Zheng*, Hongkai and Kovachki, Nikola and Jin, David and Chen, Haoxuan and Liu, Burigede and Azizzadenesheli, Kamyar and Anandkumar, Anima},
   journal={ACM/JMS Journal of Data Science},
   volume={1},
   number={3},
@@ -61,7 +63,8 @@ code={https://github.com/Anima-Lab/MaskDiT}
   year={2024},
   publisher={ACM New York, NY},
   url={https://dl.acm.org/doi/full/10.1145/3648506},
-  code={https://github.com/neuraloperator/physics_informed}
+  code={https://github.com/neuraloperator/physics_informed},
+  annotation={* equal contribution}
 }
 
 @inproceedings{xu2022langevin,
@@ -83,11 +86,12 @@ code={https://github.com/Anima-Lab/MaskDiT}
   bibtex_show={true},
   title={Implicit competitive regularization in GANs},
   abstract={The success of GANs is usually attributed to properties of the divergence obtained by an optimal discriminator. In this work we show that this approach has a fundamental flaw:\\{If} we do not impose regularity of the discriminator, it can exploit visually imperceptible errors of the generator to always achieve the maximal generator loss. In practice, gradient penalties are used to regularize the discriminator. However, this needs a metric on the space of images that captures visual similarity. Such a metric is not known, which explains the limited success of gradient penalties in stabilizing GANs.\\{Instead}, we argue that the implicit competitive regularization (ICR) arising from the simultaneous optimization of generator and discriminator enables GANs performance. We show that opponent-aware modelling of generator and discriminator, as present in competitive gradient descent (CGD), can significantly strengthen ICR and thus stabilize GAN training without explicit regularization. In our experiments, we use an existing implementation of WGAN-GP and show that by training it with CGD without any explicit regularization, we can improve the inception score (IS) on CIFAR10, without any hyperparameter tuning.},
-  author={Schaefer, Florian and Zheng, Hongkai and Anandkumar, Animashree},
+  author={Schaefer*, Florian and Zheng*, Hongkai and Anandkumar, Animashree},
   booktitle={International Conference on Machine Learning},
   pages={8533--8544},
   year={2020},
   organization={PMLR},
   url={https://proceedings.mlr.press/v119/schaefer20a.html},
-  code={https://github.com/devzhk/Implicit-Competitive-Regularization}
+  code={https://github.com/devzhk/Implicit-Competitive-Regularization},
+  annotation={* equal contribution}
 }
