@@ -20,3 +20,5 @@ social: true # includes social icons at the bottom of the page
 My research interests primarily lie in advancing generative modeling techniques and exploring their applications to inverse problems. Currently, I particularly focus on diffusion models and their role in solving inverse problems.
 
 I am supported by PIMCO Data Science Gradudate Fellowhip. 
+
+I enjoy photography in my spare time. You can find my photography portfolio on [this website](https://hzphotography.myportfolio.com/).
