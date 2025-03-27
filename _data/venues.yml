@@ -1,8 +1,10 @@
 
 "Preprint":
   url: https://arxiv.org/
+  color: "#E58B7B"
 
-"Vision":
+"ICLR":
+  url: https://iclr.cc/
   color: "#E58B7B"
 
 "ICML": 
