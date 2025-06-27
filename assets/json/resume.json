@@ -16,23 +16,38 @@
   ],
   "experience": [
     {
+      "name": "Adobe",
+      "position": "Research intern",
+      "startDate": "May 2025",
+      "endDate": "Aug 2025"
+    }, 
+    {
       "name": "NVIDIA Inc.",
       "position": "Research intern",
-      "startDate": "July 2023",
+      "startDate": "Jan 2023",
       "endDate": "Sep 2023"
     }, 
     {
       "name": "California Institute of Technology", 
       "position": "Visiting Student Research Intern", 
-      "startDate": "July 2019", 
+      "startDate": "Jul 2019", 
       "endDate": "Dec 2019"
     }
   ],
   "services": [
+      {
+      "position": "Reviewer",
+      "date": "2025",
+      "highlights": ["International Conference on Machine Learning (ICML)", 
+      "Transactions on Machine Learning Research (TMLR)"]
+    },
     {
       "position": "Reviewer",
       "date": "2024",
-      "highlights": ["Top reviewer (8%) of Conference on Neural Information Processing Systems (NeurIPS)", "International Conference on Machine Learning (ICML)", "International Conference on Learning Representations (ICLR)"]
+      "highlights": ["Top reviewer (8%) of Conference on Neural Information Processing Systems (NeurIPS)", 
+      "International Conference on Machine Learning (ICML)", 
+      "International Conference on Learning Representations (ICLR)", 
+      "Transactions on Machine Learning Research (TMLR)"]
     },
     {
       "position": "Reviewer",

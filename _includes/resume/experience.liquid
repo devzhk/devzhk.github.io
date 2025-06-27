@@ -1,5 +1,15 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% assign work = data[1] | sort: 'startDate' | reverse %}
+  {% assign work_with_sort_date = '' | split: '' %}
+  {% for item in data[1] %}
+    {% assign month_names = 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec' | split: ',' %}
+    {% assign date_parts = item.startDate | split: ' ' %}
+    {% assign month_num = month_names | index: date_parts[0] | plus: 1 %}
+    {% if month_num < 10 %}{% assign month_num = '0' | append: month_num %}{% endif %}
+    {% assign sort_date = date_parts[1] | append: '-' | append: month_num %}
+    {% assign item_with_sort = item | hash_set: 'sort_date', sort_date %}
+    {% assign work_with_sort_date = work_with_sort_date | push: item_with_sort %}
+  {% endfor %}
+  {% assign work = work_with_sort_date | sort: 'sort_date' %}
   {% for content in work %}
     <li class="list-group-item">
       <div class="row">
